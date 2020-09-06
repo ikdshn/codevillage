@@ -1,0 +1,66 @@
+.concept {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, $cleam 0%, $cleam 45%, $azuki 45%, $azuki 100%);
+  &-img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 42vh;
+    &_1 {
+      @include tab {
+        width: 49.5%;
+      }
+      width: 64%;
+      background-image: url(../img/high/hair2.png);
+      background-size: cover;
+      background-position: 80% 0%;
+    }
+    &_2 {
+      @include tab {
+        width: 49.5%;
+      }
+      width: 35%;
+      background-image: url(../img/high/hair3.png);
+      background-size: cover;
+      background-position: 80%;
+    }
+  }
+  &-messe {
+    @include tab {
+      flex-direction: column;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    &_1 {
+      @include tab {
+        width: 100%;
+      }
+      @include sp {
+        font-size: 1.8rem;
+        letter-spacing: 7.2px;
+      }
+      width: 52%;
+      font-size: 4rem;
+      text-align: center;
+      padding-top: 6rem;
+      font-family: "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho",serif;
+      letter-spacing: 16px;
+    }
+    &_2 {
+      @include tab {
+        width: 100%;
+        padding: 0;
+        padding-top: 4rem;
+      }
+      @include sp {
+        font-size: 1.6rem;
+      }
+      width: 48%;
+      padding-top: 3rem;
+      padding-right: 3rem;
+    }
+  }
+}

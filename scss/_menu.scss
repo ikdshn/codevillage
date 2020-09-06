@@ -1,0 +1,56 @@
+.menu {
+  @include tab {
+    height: auto;
+  }
+  width: 100%;
+  // height: 100vh;
+}
+
+.menu-wrap {
+  @include sp {
+    flex-direction: column;
+  }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.menu-item {
+  @include tab {
+    width: 33%;
+  }
+  @include sp {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  width: 28%;
+}
+
+.menu_img {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.menu_content {
+  padding: 10px;
+  &_title {
+    @include tab {
+      font-size: 2.5rem;
+    }
+    @include sp {
+      font-size: 3rem;
+      text-align: left;
+    }
+    font-size: 3rem;
+    text-align: center;
+  }
+  &_intro {
+    margin-top: 20px;
+  }
+  &_price {
+    text-align: right;
+    margin-top: 20px;
+  }
+}
