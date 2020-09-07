@@ -524,6 +524,7 @@ nav ul a:hover {
 .contact-logo {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 600px) {
   .contact-logo {
@@ -543,8 +544,7 @@ nav ul a:hover {
   }
 }
 .contact-logo_btn {
-  height: 100%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border: none;
   outline: none;
   background: transparent;
